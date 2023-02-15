@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="vote">
+      <div class="elecion">checking for election</div>
+      <input
+        oninput="this.value=this.value.replace(/[^a-z]/gi,'')"
+        class="input"
+        id="Fname"
+        type="text"
+        placeholder="Enter Your First Name ..."
+        required
+      />
+      <div id="validFname" class="valid"></div>
+      <input
+        oninput="this.value=this.value.replace(/[^a-z]/gi,'')"
+        class="input"
+        id="Lname"
+        type="text"
+        placeholder="Enter Your Last Name ..."
+        required
+      />
+      <div id="validLname" class="valid"></div>
+      <input
+        class="input"
+        id="age"
+        type="text"
+        placeholder="Enter Your Age ..."
+        oninput="this.value=this.value.replace(/\s/g, '')"
+        required
+      />
+      <div id="validAge" class="valid"></div>
+      <button id="btn" onclick="checkEmpty() ">Check</button>
+      <div class="txt"></div>
+      <div id="txt2" class="txt"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,67 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.elecion {
+  font-size: 50px;
+  color: rgb(70, 70, 182);
+  text-transform: capitalize;
+  margin: 40px;
+  text-align: center;
+}
+
+.vote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid rgb(169, 16, 189);
+  outline: none;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 15px;
+  border: none;
+  background-color: rgb(49, 49, 134);
+  color: white;
+}
+
+.txt {
+  margin: 10px 20px;
+  font-size: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.valid {
+  color: red;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.selectName {
+  margin: 20px;
+  font-size: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
